@@ -1,0 +1,66 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.tripdata{
+    width: 90%;
+    height: 100vh;
+    margin: 0% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: hidden;
+    
+}
+.tripdata .t-card .t-img{
+    width: 100%;
+    height: 200px;   
+    overflow: hidden;
+}
+.tripdata .t-card .t-img img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+} 
+.tripdata .t-card {
+    width: 25%;
+    margin-right: 10%;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px #333;
+    padding: 10px;
+    border-radius: 10px;
+    row-gap: 10px;
+}
+.tripdata .t-card .t-img img:hover{
+    transform: scale(1.7);
+}
+.tripdata .t-card p{
+    text-align: start;
+}
+.tripdata .t-card h2{
+    text-align: start;
+}
+.tripdata .t-card:hover{
+    transform: translateY(-15px);
+}
+@media (max-width:725px) {
+    .tripdata{
+        width: 100%;
+        height: 230vh;
+        padding: 10% 0%;
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 50px;
+    }
+    .tripdata .t-card{
+        width: 70%;
+        height: 100%;
+
+    }
+    .tripdata .t-card:hover{
+        transform: translate(0px);
+    }
+}

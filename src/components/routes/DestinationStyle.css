@@ -1,0 +1,106 @@
+*{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.destination{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+.destination .dest-1{
+    width: 100%;
+    height: 100%;
+    margin: 0% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    column-gap: 100px;
+}
+.destination .dest-1 .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 10%;
+    column-gap: 10px;
+}
+.destination .dest-1 .images img{
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.destination .dest-1 .images .img1{
+    transform: translateY(20px);
+}
+.destination h1{
+    padding-top: 1%;
+}
+.destination .dest-1 .para{
+    text-align: start;
+}
+.destination #title{
+    font-size: 45px;
+}
+
+
+
+.destination .dest-2{
+    width: 100%;
+    height: 100%;
+    margin: 0% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    column-gap: 100px;
+}
+.destination .dest-2 .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 10%;
+    column-gap: 10px;
+}
+.destination .dest-2 .images img{
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.destination .dest-2 .images .img1{
+    transform: translateY(20px);
+}
+.destination .dest-2 .para{
+    text-align: end;
+    margin-right: 10%;
+}
+@media (max-width:725px) {
+    .destination .dest-1{
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+    .destination{
+        width: 100%;
+        height: 150vh;
+    }
+    .destination .dest-2{
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+    .destination .dest-2 .para{
+        text-align: start;
+    }
+    .destination #title{
+        font-size: 30px;
+    }
+}

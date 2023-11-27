@@ -1,0 +1,32 @@
+.hero1{
+    width: 100%;
+    height: 80vh;
+}
+.hero1 .about-img-class{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero1 .para .about-head-class{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 50px;
+}
+.hero1 .para .services-head-class{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    font-size: 50px;
+}
+@media (max-width:725px) {
+    .hero1 .para .services-head-class{
+        left: 30%;
+    }
+    .hero1 {
+        width: 100%;
+        height: 100vh;
+    }
+}

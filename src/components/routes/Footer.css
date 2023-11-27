@@ -1,0 +1,69 @@
+.footer{
+    width: 100%;
+    height: 50vh;
+    margin-top: 5%;
+    background-color: black;
+    color: white;
+    padding: 3% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.footer .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.footer .top i{
+    font-size: 30px;
+    padding: 0% 10px;
+    transition: all 0.4s linear;
+}
+.footer .top i:hover{
+    cursor: pointer;
+    color: mediumaquamarine;
+}
+.footer .bottom div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;    
+    text-align: start;
+}
+.footer .bottom div a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.footer .bottom div a:hover{
+    transform: translateX(5px);
+}
+.footer .bottom{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.footer .top h2:hover{
+    cursor: pointer;
+    transition: all 0.3s linear; 
+    color: mediumaquamarine;
+}
+@media (max-width:725px) {
+    .footer{
+        width: 100%;
+        height: 100%;
+        z-index: 1;    
+    }   
+    .footer .bottom{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    }
+}

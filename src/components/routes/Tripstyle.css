@@ -1,0 +1,22 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.trip{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+}
+@media (max-width:725px) {
+    h1{
+        font-size: 35px;
+    }
+    .trip{
+        width: 100%;
+        height: 250vh;
+    }
+}
